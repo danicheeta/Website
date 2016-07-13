@@ -19,7 +19,7 @@ body {
 	// Dotted line underlines for links
 	p > a,
 	li > a {
-		align: right;#######
+		text-align: right;#######
 		border-bottom: 1px dotted lighten($link-color, 50);
 		&:hover {
 			border-bottom-style: solid;
