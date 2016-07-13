@@ -1,4 +1,5 @@
 body {
+	align: right;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -11,8 +12,6 @@ body {
 .hentry {
 	@include clearfix;
 	h1, h2, h3, h4, h5, h6, p, li {
-		text-align: right;
-		align: right;
 		word-wrap: break-word;
 	}
 }
