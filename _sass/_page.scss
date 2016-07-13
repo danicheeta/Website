@@ -3,7 +3,6 @@ body {
 	padding: 0;
 	width: 100%;
 	background-color: $body-color;
-	text: right;
 }
 
 // Main
@@ -213,6 +212,7 @@ header .entry-meta {
 #post,
 #page {
 	.entry-content {
+		margin: right;#######
 		margin: 40px 2px 20px 2px;
 		padding: 10px 15px;
 		background-color: $white;
