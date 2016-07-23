@@ -8,7 +8,7 @@ tags: [database, go, golang, mgo, mongodb, driver]
 there is going to be relief examples of using mgo driver in go from creating a session
 to running queries
 
-##dialing the server + getting session, database and collection
+## dialing the server + getting session, database and collection
 {% highlight html %}
 session, err := mgo.Dial(your address)
 if err != nil {
@@ -22,7 +22,7 @@ col := db.C(collection name)
 {% endhighlight %}
 
 
-##adding a document to a collection in database
+## adding a document to a collection in database
 assume u have a structure called ppl like folowing:
 {% highlight html %}
 type ppl structure{
