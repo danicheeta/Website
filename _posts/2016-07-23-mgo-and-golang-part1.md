@@ -2,11 +2,13 @@
 layout: post
 title: "Examples of using mgo in golan ;Part 1"
 description: "Some code examples in go language"
-tags: [database, go, golang, mgo, mongodb, driver]
+tags: [database, go, golang, mgo, mongodb]
 ---
 
-there is going to be relief examples of using mgo driver in go from creating a session
-to running queries
+In this part we're going to talk about how to make a session and a collection object
+and then insert it into the document
+
+You can also use mongodb as services APIs like mongolab beside local mongo server 
 
 ## dialing the server + getting session, database and collection
 {% highlight html %}
