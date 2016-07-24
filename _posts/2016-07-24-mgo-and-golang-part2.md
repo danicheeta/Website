@@ -47,3 +47,28 @@ Remember that diffrence between these two, first type is faster
 cuz the second type search all over the doc to fund the key but finding by Id only checks `_id` keys
 
 ## Delete
+We have 3 delete type:
+
+RemoveAll, RemoveId and Remove
+{% highlight html %}
+err := collection.RemoveId(your ID)
+err := collection.Remove(bson.M{"key": "value"})
+err := collection.RemoveAll(bson.M{"key": "value"})
+{% endhighlight %}
+RemoveAll will continue searching for the key-value pair after finding first match
+witch Remove doesn't
+
+## Update
+For update we're going to need 2 argument for Update function
+
+selector and querier:
+{% highlight html %}
+var update map[string]interface
+
+querier := bson.M{"key": "value"}
+change := bson.M{"$set": update}
+
+err2 := ai.DB.C("games").Update(querier, change)
+{% endhighlight %}
+
+till next time :*
